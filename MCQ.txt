@@ -1,0 +1,25 @@
+var questions =[
+{ prompt: "what is the chance of my selection in e-cell?\n(a) 10%\n (b) 40%\n (c)100%\n (d)60%",
+  answer: "c"
+  },
+  {prompt: "Getting into iit kgp be like?\n(a) Iitian wala swag\n (b) ldkiyan to ab mujhe hi propose kregi\n (c)bekar hi aa gye yha\n (d)Chlo e-cell me aake startup khol ke jindagi set kr lenge",
+  answer: "d"
+  },
+  {prompt: "Online sem be like?\n(a) Maza hai\n (b) underwear me class attend\n (c)life ki what lg gyi\n (d)chlo km se km class me araam se so skte hai",
+  answer: "c"
+  },
+  {prompt: "Cracking JEE be like\n(a) Mujhse bda duniya me ab koi nhi hai?\n (b) college aane ke baad seniors ne sb akad nikal di?\n (c) mujhe pta nhi tha ki JEE ke aage bhi bahot bdi duniya hai\n (d) Apne Area ka nya star",
+  answer: "b"
+  }                                                                                                                     }
+  ] 
+  var score = 0;
+  for(var i=0; i< questions.length; i++){
+  var input = window.prompt(questions[i].prompt);
+  if(input ==questions[i].answer){
+ score++;
+ alert("correct");
+ }else{alert("wrong! correct answer is " + questions[i].answer);
+ }
+  }
+  alert("You marked " + score + " correct answer"); 
+   //run this code on google chrome and then select me if you want                                                                              
